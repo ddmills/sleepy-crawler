@@ -43,11 +43,6 @@ _global_script_classes=[ {
 "class": "Races",
 "language": "GDScript",
 "path": "res://characters/races/races.gd"
-}, {
-"base": "Node",
-"class": "Rnd",
-"language": "GDScript",
-"path": "res://misc/rnd.gd"
 } ]
 _global_script_class_icons={
 "Character": "res://ui/icons/flat/man.png",
@@ -56,8 +51,7 @@ _global_script_class_icons={
 "CharacterSprites": "res://ui/icons/flat/run.png",
 "Gender": "",
 "Race": "res://ui/icons/flat/hand.png",
-"Races": "",
-"Rnd": ""
+"Races": ""
 }
 
 [application]

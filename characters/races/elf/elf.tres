@@ -1,13 +1,16 @@
-[gd_resource type="Resource" load_steps=5 format=2]
+[gd_resource type="Resource" load_steps=8 format=2]
 
 [ext_resource path="res://characters/races/race.gd" type="Script" id=1]
 [ext_resource path="res://characters/races/race_bases.png" type="Texture" id=2]
+[ext_resource path="res://misc/character_sprites_medium.tscn" type="PackedScene" id=3]
+[ext_resource path="res://characters/legs/legs_medium_bare_female.tres" type="Texture" id=4]
+[ext_resource path="res://characters/legs/legs_medium_bare_male.tres" type="Texture" id=5]
 
-[sub_resource type="AtlasTexture" id=1]
+[sub_resource type="AtlasTexture" id=2]
 atlas = ExtResource( 2 )
 region = Rect2( 72, 40, 16, 24 )
 
-[sub_resource type="AtlasTexture" id=2]
+[sub_resource type="AtlasTexture" id=3]
 atlas = ExtResource( 2 )
 region = Rect2( 72, 8, 16, 24 )
 
@@ -16,5 +19,10 @@ script = ExtResource( 1 )
 name_singular = "elf"
 name_plural = "elves"
 size = 1
-body_male = SubResource( 1 )
-female_body = SubResource( 2 )
+sprite_container = ExtResource( 3 )
+body_male = SubResource( 3 )
+body_female = SubResource( 2 )
+legs_male = ExtResource( 5 )
+legs_female = ExtResource( 4 )
+skin_colors = [ Color( 0.815686, 0.52549, 0.4, 1 ) ]
+hair_colors = [  ]
