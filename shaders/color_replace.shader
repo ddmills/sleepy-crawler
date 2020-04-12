@@ -24,7 +24,7 @@ void fragment() {
 
 	if (distance(col, skin_target.rgb) < skin_tolerance) {
 		col = skin_replace.rgb;
-	} else if (distance(col, skin_target.rgb) < hair_tolerance) {
+	} else if (distance(col, hair_target.rgb) < hair_tolerance) {
 		col = hair_replace.rgb;
 	} else if (distance(col, eye_target.rgb) < eye_tolerance) {
 		col = eye_replace.rgb;

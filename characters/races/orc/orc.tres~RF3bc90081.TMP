@@ -8,16 +8,16 @@
 
 [sub_resource type="AtlasTexture" id=1]
 atlas = ExtResource( 2 )
-region = Rect2( 8, 40, 16, 24 )
+region = Rect2( 104, 40, 16, 24 )
 
 [sub_resource type="AtlasTexture" id=2]
 atlas = ExtResource( 2 )
-region = Rect2( 8, 8, 16, 24 )
+region = Rect2( 104, 8, 16, 24 )
 
 [resource]
 script = ExtResource( 1 )
-name_singular = "human"
-name_plural = "humans"
+name_singular = "orc"
+name_plural = "orcs"
 size = 1
 sprite_container = ExtResource( 3 )
 body_male = SubResource( 2 )
@@ -26,6 +26,5 @@ legs_male = ExtResource( 5 )
 legs_female = ExtResource( 4 )
 head_features = [  ]
 face_features = [  ]
-skin_colors = [ Color( 0.670588, 0.509804, 0.431373, 1 ) ]
+skin_colors = [ Color( 0.211765, 0.290196, 0.262745, 1 ) ]
 hair_colors = [  ]
-eye_colors = [ Color( 0.176471, 0.309804, 0.384314, 1 ) ]

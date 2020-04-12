@@ -1,10 +1,11 @@
-[gd_resource type="Resource" load_steps=8 format=2]
+[gd_resource type="Resource" load_steps=9 format=2]
 
 [ext_resource path="res://characters/races/race.gd" type="Script" id=1]
 [ext_resource path="res://characters/races/race_bases.png" type="Texture" id=2]
-[ext_resource path="res://misc/character_sprites_medium.tscn" type="PackedScene" id=3]
+[ext_resource path="res://characters/races/orc/character_sprites_orc.tscn" type="PackedScene" id=3]
 [ext_resource path="res://characters/legs/legs_medium_bare_female.tres" type="Texture" id=4]
 [ext_resource path="res://characters/legs/legs_medium_bare_male.tres" type="Texture" id=5]
+[ext_resource path="res://characters/features/face/tusks_medium.tres" type="Texture" id=6]
 
 [sub_resource type="AtlasTexture" id=1]
 atlas = ExtResource( 2 )
@@ -24,5 +25,8 @@ body_male = SubResource( 2 )
 body_female = SubResource( 1 )
 legs_male = ExtResource( 5 )
 legs_female = ExtResource( 4 )
+head_features = [  ]
+face_features = [ ExtResource( 6 ) ]
 skin_colors = [ Color( 0.211765, 0.290196, 0.262745, 1 ) ]
 hair_colors = [  ]
+eye_colors = [ Color( 0.380392, 0.156863, 0.129412, 1 ) ]

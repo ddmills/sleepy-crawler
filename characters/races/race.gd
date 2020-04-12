@@ -15,8 +15,12 @@ export(Texture) var body_female
 export(Texture) var legs_male
 export(Texture) var legs_female
 
+export(Array, Texture) var head_features
+export(Array, Texture) var face_features
+
 export(Array, Color) var skin_colors
 export(Array, Color) var hair_colors
+export(Array, Color) var eye_colors
 
 
 func get_body_texture(gender):

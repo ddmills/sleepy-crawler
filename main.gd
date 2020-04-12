@@ -21,6 +21,9 @@ func _randomize_character():
 	character.race = Rnd.pick(Races.all)
 	character.gender = Rnd.pick([Gender.MALE, Gender.FEMALE])
 	character.skin_color = Rnd.pick(character.race.skin_colors)
+	character.eye_color = Rnd.pick(character.race.eye_colors)
+	character.face_feature = Rnd.pick(character.race.face_features)
+	character.head_feature = Rnd.pick(character.race.head_features)
 	
 	var gender = Gender.to_string_lower(character.gender)
 	var race = character.race.name_singular
