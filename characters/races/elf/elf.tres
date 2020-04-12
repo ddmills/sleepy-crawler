@@ -1,4 +1,4 @@
-[gd_resource type="Resource" load_steps=9 format=2]
+[gd_resource type="Resource" load_steps=17 format=2]
 
 [ext_resource path="res://characters/races/race.gd" type="Script" id=1]
 [ext_resource path="res://characters/races/race_bases.png" type="Texture" id=2]
@@ -6,6 +6,14 @@
 [ext_resource path="res://characters/legs/legs_medium_bare_female.tres" type="Texture" id=4]
 [ext_resource path="res://characters/legs/legs_medium_bare_male.tres" type="Texture" id=5]
 [ext_resource path="res://characters/features/head/pointy_ears.tres" type="Texture" id=6]
+[ext_resource path="res://characters/features/hair/head/hair_elvish_1.tres" type="Texture" id=7]
+[ext_resource path="res://characters/features/hair/head/hair_elvish_3.tres" type="Texture" id=8]
+[ext_resource path="res://characters/features/hair/head/hair_elvish_4.tres" type="Texture" id=9]
+[ext_resource path="res://characters/features/hair/head/hair_elvish_2.tres" type="Texture" id=10]
+[ext_resource path="res://characters/features/hair/head/hair_elvish_5.tres" type="Texture" id=11]
+[ext_resource path="res://characters/features/hair/head/female_hair_2.tres" type="Texture" id=12]
+[ext_resource path="res://characters/features/hair/head/female_hair_9.tres" type="Texture" id=13]
+[ext_resource path="res://characters/features/hair/head/female_hair_8.tres" type="Texture" id=14]
 
 [sub_resource type="AtlasTexture" id=1]
 atlas = ExtResource( 2 )
@@ -27,10 +35,10 @@ legs_male = ExtResource( 5 )
 legs_female = ExtResource( 4 )
 head_features = [ ExtResource( 6 ) ]
 face_features = [  ]
-male_hair = [  ]
-female_hair = [  ]
+male_hair = [ ExtResource( 7 ), ExtResource( 10 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 11 ) ]
+female_hair = [ ExtResource( 7 ), ExtResource( 10 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 14 ), ExtResource( 13 ) ]
 male_face_hair = [  ]
 female_face_hair = [  ]
 skin_colors = [ Color( 0.815686, 0.52549, 0.4, 1 ) ]
-hair_colors = [  ]
+hair_colors = [ Color( 0.854902, 0.796078, 0.623529, 1 ), Color( 0.686275, 0.619608, 0.462745, 1 ), Color( 0.670588, 0.619608, 0.584314, 1 ), Color( 0.847059, 0.729412, 0.2, 1 ) ]
 eye_colors = [ Color( 0.423529, 0.458824, 0.360784, 1 ) ]
