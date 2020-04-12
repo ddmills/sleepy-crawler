@@ -1,0 +1,20 @@
+[gd_resource type="Resource" load_steps=5 format=2]
+
+[ext_resource path="res://characters/races/race.gd" type="Script" id=1]
+[ext_resource path="res://characters/races/race_bases.png" type="Texture" id=2]
+
+[sub_resource type="AtlasTexture" id=1]
+atlas = ExtResource( 2 )
+region = Rect2( 256, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=2]
+atlas = ExtResource( 2 )
+region = Rect2( 256, 32, 32, 32 )
+
+[resource]
+script = ExtResource( 1 )
+name_singular = "minotaur"
+name_plural = "minotaurs"
+size = 2
+body_male = SubResource( 1 )
+female_body = SubResource( 2 )

@@ -1,0 +1,92 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[ {
+"base": "Node2D",
+"class": "Character",
+"language": "GDScript",
+"path": "res://characters/scripts/character.gd"
+}, {
+"base": "Node",
+"class": "CharacterSize",
+"language": "GDScript",
+"path": "res://enums/character_size.gd"
+}, {
+"base": "Resource",
+"class": "CharacterSpriteSlots",
+"language": "GDScript",
+"path": "res://enums/character_sprite_slots.gd"
+}, {
+"base": "Node2D",
+"class": "CharacterSprites",
+"language": "GDScript",
+"path": "res://characters/scripts/character_sprites.gd"
+}, {
+"base": "Node",
+"class": "Gender",
+"language": "GDScript",
+"path": "res://enums/gender.gd"
+}, {
+"base": "Resource",
+"class": "Race",
+"language": "GDScript",
+"path": "res://characters/races/race.gd"
+} ]
+_global_script_class_icons={
+"Character": "res://ui/icons/flat/man.png",
+"CharacterSize": "",
+"CharacterSpriteSlots": "",
+"CharacterSprites": "",
+"Gender": "",
+"Race": "res://ui/icons/flat/hand.png"
+}
+
+[application]
+
+config/name="Sleepy Crawler"
+run/main_scene="res://main.tscn"
+config/icon="res://icon.png"
+
+[display]
+
+window/size/width=320
+window/size/height=180
+window/size/test_width=1280
+window/size/test_height=720
+window/stretch/mode="2d"
+window/stretch/aspect="keep"
+
+[importer_defaults]
+
+texture={
+"compress/bptc_ldr": 0,
+"compress/hdr_mode": 0,
+"compress/lossy_quality": 0.7,
+"compress/mode": 0,
+"compress/normal_map": 0,
+"detect_3d": true,
+"flags/anisotropic": false,
+"flags/filter": false,
+"flags/mipmaps": false,
+"flags/repeat": 0,
+"flags/srgb": 2,
+"process/HDR_as_SRGB": false,
+"process/fix_alpha_border": true,
+"process/invert_color": false,
+"process/premult_alpha": false,
+"size_limit": 0,
+"stream": false,
+"svg/scale": 1.0
+}
+
+[rendering]
+
+quality/2d/use_pixel_snap=true
+environment/default_environment="res://default_env.tres"
