@@ -6,20 +6,19 @@
 [ext_resource path="res://characters/materials/character_sprites.tres" type="Material" id=4]
 [ext_resource path="res://characters/scripts/character_sprites.gd" type="Script" id=5]
 
-
 [sub_resource type="AtlasTexture" id=1]
 atlas = ExtResource( 3 )
 region = Rect2( 256, 0, 32, 32 )
 
-[sub_resource type="AtlasTexture" id=3]
+[sub_resource type="AtlasTexture" id=2]
 atlas = ExtResource( 2 )
 region = Rect2( 24, 0, 24, 8 )
 
-[sub_resource type="AtlasTexture" id=4]
+[sub_resource type="AtlasTexture" id=3]
 atlas = ExtResource( 2 )
 region = Rect2( 0, 16, 16, 8 )
 
-[sub_resource type="Animation" id=5]
+[sub_resource type="Animation" id=4]
 resource_name = "pose"
 tracks/0/type = "value"
 tracks/0/path = NodePath("legs:rotation_degrees")
@@ -178,7 +177,7 @@ tracks/12/keys = {
 "values": [ Vector2( 0, -8 ) ]
 }
 
-[sub_resource type="Animation" id=6]
+[sub_resource type="Animation" id=5]
 resource_name = "run"
 length = 0.3
 loop = true
@@ -273,7 +272,7 @@ script = ExtResource( 5 )
 
 [node name="body" type="Sprite" parent="."]
 use_parent_material = true
-position = Vector2( 0, -16 )
+position = Vector2( 0, -17 )
 texture = SubResource( 1 )
 
 [node name="legs" type="Sprite" parent="."]
@@ -284,15 +283,27 @@ hframes = 3
 
 [node name="head_detail" type="Sprite" parent="."]
 use_parent_material = true
-position = Vector2( 0, -24 )
-texture = SubResource( 3 )
+position = Vector2( 0, -25 )
+texture = SubResource( 2 )
 
 [node name="face_detail" type="Sprite" parent="."]
 visible = false
 use_parent_material = true
 position = Vector2( 2, -19 )
-texture = SubResource( 4 )
+texture = SubResource( 3 )
+
+[node name="face_hair" type="Sprite" parent="."]
+visible = false
+use_parent_material = true
+position = Vector2( 2, -19 )
+texture = SubResource( 3 )
+
+[node name="head_hair" type="Sprite" parent="."]
+visible = false
+use_parent_material = true
+position = Vector2( 2, -19 )
+texture = SubResource( 3 )
 
 [node name="animation" type="AnimationPlayer" parent="."]
-anims/pose = SubResource( 5 )
-anims/run = SubResource( 6 )
+anims/pose = SubResource( 4 )
+anims/run = SubResource( 5 )

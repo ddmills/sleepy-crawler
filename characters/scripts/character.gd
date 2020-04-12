@@ -9,8 +9,11 @@ export(Resource) var race setget _set_race
 export(Gender.gender) var gender setget _set_gender
 export(Color) var skin_color setget _set_skin_color
 export(Color) var eye_color setget _set_eye_color
+export(Color) var hair_color setget _set_hair_color
 export(Resource) var head_feature setget _set_head_feature
 export(Resource) var face_feature setget _set_face_feature
+export(Resource) var head_hair setget _set_head_hair
+export(Resource) var face_hair setget _set_face_hair
 
 
 func _set_gender(value):
@@ -39,6 +42,20 @@ func _set_head_feature(value):
 	sprites.on_head_feature_changed(self)
 
 
+func _set_face_hair(value):
+	face_hair = value
+	
+	if (!sprites): return
+	sprites.on_face_hair_changed(self)
+
+
+func _set_head_hair(value):
+	head_hair = value
+	
+	if (!sprites): return
+	sprites.on_head_hair_changed(self)
+
+
 func _set_face_feature(value):
 	face_feature = value
 	
@@ -58,3 +75,10 @@ func _set_eye_color(value):
 	
 	if (!sprites): return
 	sprites.on_eye_color_changed(self)
+
+
+func _set_hair_color(value):
+	hair_color = value
+	
+	if (!sprites): return
+	sprites.on_hair_color_changed(self)

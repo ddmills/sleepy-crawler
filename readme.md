@@ -71,6 +71,8 @@ Hearty folk whos only desire in life is to be with others.
 
 Lifespan: 340-510 years
 
+Gnomes often try to appear taller by spiking their hair up.
+
 
 ### Minotaurs
 

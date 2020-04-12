@@ -219,6 +219,18 @@ use_parent_material = true
 position = Vector2( 1, -15 )
 texture = SubResource( 3 )
 
+[node name="head_hair" type="Sprite" parent="."]
+visible = false
+use_parent_material = true
+position = Vector2( 1, -15 )
+texture = SubResource( 3 )
+
+[node name="face_hair" type="Sprite" parent="."]
+visible = false
+use_parent_material = true
+position = Vector2( 1, -15 )
+texture = SubResource( 3 )
+
 [node name="animation" type="AnimationPlayer" parent="."]
 anims/pose = SubResource( 4 )
 anims/run = SubResource( 5 )

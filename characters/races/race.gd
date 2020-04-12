@@ -18,6 +18,11 @@ export(Texture) var legs_female
 export(Array, Texture) var head_features
 export(Array, Texture) var face_features
 
+export(Array, Texture) var male_hair
+export(Array, Texture) var female_hair
+export(Array, Texture) var male_face_hair
+export(Array, Texture) var female_face_hair
+
 export(Array, Color) var skin_colors
 export(Array, Color) var hair_colors
 export(Array, Color) var eye_colors
@@ -37,3 +42,19 @@ func get_legs_texture(gender):
 			return legs_male
 		Gender.gender.FEMALE:
 			return legs_female
+
+
+func get_hair_textures(gender):
+	match gender:
+		Gender.gender.MALE:
+			return male_hair
+		Gender.gender.FEMALE:
+			return female_hair
+
+
+func get_face_hair_textures(gender):
+	match gender:
+		Gender.gender.MALE:
+			return male_face_hair
+		Gender.gender.FEMALE:
+			return female_face_hair
