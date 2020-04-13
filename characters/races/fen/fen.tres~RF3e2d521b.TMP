@@ -1,4 +1,4 @@
-[gd_resource type="Resource" load_steps=11 format=2]
+[gd_resource type="Resource" load_steps=9 format=2]
 
 [ext_resource path="res://characters/races/race.gd" type="Script" id=1]
 [ext_resource path="res://characters/races/race_bases.png" type="Texture" id=2]
@@ -6,8 +6,6 @@
 [ext_resource path="res://characters/legs/legs_medium_bare_female.tres" type="Texture" id=4]
 [ext_resource path="res://characters/legs/legs_medium_bare_male.tres" type="Texture" id=5]
 [ext_resource path="res://characters/features/head/fen_horns_1.tres" type="Texture" id=6]
-[ext_resource path="res://characters/features/head/fen_horns_2.tres" type="Texture" id=7]
-[ext_resource path="res://characters/features/head/fen_horns_3.tres" type="Texture" id=8]
 
 [sub_resource type="AtlasTexture" id=1]
 atlas = ExtResource( 2 )
@@ -27,7 +25,7 @@ body_male = SubResource( 2 )
 body_female = SubResource( 1 )
 legs_male = ExtResource( 5 )
 legs_female = ExtResource( 4 )
-head_features = [ ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ) ]
+head_features = [ ExtResource( 6 ) ]
 face_features = [  ]
 male_hair = [  ]
 female_hair = [  ]

@@ -5,8 +5,8 @@
 [ext_resource path="res://characters/races/race_bases.png" type="Texture" id=3]
 [ext_resource path="res://characters/materials/character_sprites.tres" type="Material" id=4]
 [ext_resource path="res://characters/scripts/character_sprites.gd" type="Script" id=5]
-[ext_resource path="res://characters/features/hair/face/beard_5.tres" type="Texture" id=6]
-[ext_resource path="res://characters/features/hair/head/male_hair_3.tres" type="Texture" id=7]
+[ext_resource path="res://characters/features/hair/face/beard_1.tres" type="Texture" id=6]
+[ext_resource path="res://characters/features/hair/head/male_hair_4.tres" type="Texture" id=7]
 
 [sub_resource type="AtlasTexture" id=1]
 atlas = ExtResource( 3 )
@@ -224,7 +224,7 @@ tracks/16/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 0,
-"values": [ Vector2( 0, -13 ) ]
+"values": [ Vector2( 0, -12 ) ]
 }
 tracks/17/type = "value"
 tracks/17/path = NodePath("head_hair:rotation_degrees")
@@ -278,7 +278,7 @@ tracks/1/keys = {
 "times": PoolRealArray( 0, 0.075, 0.2 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
-"values": [ Vector2( 0, -12 ), Vector2( -4.76837e-07, -10.5 ), Vector2( 0, -12 ) ]
+"values": [ Vector2( 0, -12 ), Vector2( 0, -11.292 ), Vector2( 0, -12 ) ]
 }
 tracks/2/type = "value"
 tracks/2/path = NodePath("body:scale")
@@ -288,9 +288,9 @@ tracks/2/imported = false
 tracks/2/enabled = true
 tracks/2/keys = {
 "times": PoolRealArray( 0, 0.075, 0.2 ),
-"transitions": PoolRealArray( 1, 1, 1 ),
+"transitions": PoolRealArray( 1, 0.554786, 1 ),
 "update": 0,
-"values": [ Vector2( 1, 1 ), Vector2( 1, 0.875 ), Vector2( 1, 1 ) ]
+"values": [ Vector2( 1, 1 ), Vector2( 1, 0.924 ), Vector2( 1, 1 ) ]
 }
 tracks/3/type = "value"
 tracks/3/path = NodePath("face_hair:position")
@@ -350,7 +350,7 @@ tracks/7/keys = {
 "times": PoolRealArray( 0, 0.125, 0.2 ),
 "transitions": PoolRealArray( 1, 0.659753, 1 ),
 "update": 0,
-"values": [ Vector2( 0, -13 ), Vector2( 0, -11.5 ), Vector2( 0, -13 ) ]
+"values": [ Vector2( 0, -12 ), Vector2( 0, -11.5 ), Vector2( 0, -12 ) ]
 }
 tracks/8/type = "value"
 tracks/8/path = NodePath("head_hair:scale")
@@ -386,7 +386,7 @@ tracks/10/keys = {
 "times": PoolRealArray( 0, 0.125, 0.2 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
-"values": [ Vector2( 1, 1 ), Vector2( 1, 1 ), Vector2( 1, 1 ) ]
+"values": [ Vector2( 1, 1 ), Vector2( 1, 0.92 ), Vector2( 1, 1 ) ]
 }
 
 [node name="sprites" type="Node2D"]
@@ -395,8 +395,8 @@ script = ExtResource( 5 )
 
 [node name="body" type="Sprite" parent="."]
 use_parent_material = true
-position = Vector2( -7.75017e-08, -11.7562 )
-scale = Vector2( 1, 0.979683 )
+position = Vector2( 0, -11.5141 )
+scale = Vector2( 1, 0.947843 )
 texture = SubResource( 1 )
 
 [node name="legs" type="Sprite" parent="."]
@@ -404,28 +404,28 @@ use_parent_material = true
 position = Vector2( 0, -8 )
 texture = ExtResource( 1 )
 hframes = 3
-frame = 1
 
 [node name="head_hair" type="Sprite" parent="."]
 use_parent_material = true
-position = Vector2( 0, -12.7928 )
-scale = Vector2( 1, 0.983069 )
+position = Vector2( 0, -11.7941 )
+scale = Vector2( 1, 0.974265 )
 texture = ExtResource( 7 )
 
 [node name="head_detail" type="Sprite" parent="."]
 use_parent_material = true
-position = Vector2( 0, -10.4218 )
+position = Vector2( 0, -10.5882 )
+scale = Vector2( 1, 0.967059 )
 texture = SubResource( 2 )
 
 [node name="face_hair" type="Sprite" parent="."]
 use_parent_material = true
-position = Vector2( 0, -6.86456 )
-scale = Vector2( 1, 0.983069 )
+position = Vector2( 0, -6.79412 )
+scale = Vector2( 1, 0.974265 )
 texture = ExtResource( 6 )
 
 [node name="face_detail" type="Sprite" parent="."]
 use_parent_material = true
-position = Vector2( 1, -8.82153 )
+position = Vector2( 1, -8.58823 )
 texture = SubResource( 3 )
 
 [node name="animation" type="AnimationPlayer" parent="."]

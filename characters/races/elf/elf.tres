@@ -39,6 +39,6 @@ male_hair = [ ExtResource( 7 ), ExtResource( 10 ), ExtResource( 8 ), ExtResource
 female_hair = [ ExtResource( 7 ), ExtResource( 10 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 14 ), ExtResource( 13 ) ]
 male_face_hair = [  ]
 female_face_hair = [  ]
-skin_colors = [ Color( 0.815686, 0.52549, 0.4, 1 ) ]
+skin_colors = [ Color( 0.752941, 0.592157, 0.470588, 1 ) ]
 hair_colors = [ Color( 0.854902, 0.796078, 0.623529, 1 ), Color( 0.686275, 0.619608, 0.462745, 1 ), Color( 0.670588, 0.619608, 0.584314, 1 ), Color( 0.847059, 0.729412, 0.2, 1 ) ]
 eye_colors = [ Color( 0.423529, 0.458824, 0.360784, 1 ) ]

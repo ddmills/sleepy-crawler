@@ -45,9 +45,9 @@ __meta__ = {
 }
 
 [node name="label" type="Label" parent="control"]
-margin_left = 11.0
+margin_left = 8.0
 margin_top = 3.0
-margin_right = 171.0
+margin_right = 168.0
 margin_bottom = 17.0
 rect_scale = Vector2( 0.3, 0.3 )
 text = "male fen"

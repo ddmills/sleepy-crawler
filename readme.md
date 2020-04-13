@@ -30,7 +30,16 @@ Secondary attributes are influenced by the primary attributes.
 
 Lifespan: 80-100 years
 
-Humans are a relatively young race that lead short lives.
+DEX+1
+STR+1
+CON+1
+WIS+1
+
+
+Humans are average at everything. They are relatively young race that lead
+short and varying lives. They display the widest range of possibilities within
+the realm, from the outcasts of society, to noble kings and queens, some are
+evil, and some are good.
 
 ### Goblins
 
@@ -38,50 +47,76 @@ Lifespan: 100 - 140 years
 
 DEX+3
 
-Goblins are tenacious beings, with a strong will to survive. Often described as scrappy and fierce. 
-Dex+2
+Goblins are grotesque and tenacious beings, with a strong will to survive.
+Often described as scrappy, mischievous, and fierce. They prefer to laugh,
+often at the expense of others. They have a great respect for authority
+
 
 
 ### Elves 
 
 Lifespan: 1800-2000 years
 
-Often describes as pious beings.
+Often describes as pious beings. Androgynous
 
 ### Orcs
 
 Lifespan: 130-160 years
 
+Orcs are serious brutes who will always tell you what is on their mind.
+
+* determined 
+* strong 
+* 
+
 ### Fens
 
 Lifespan: 500-600 years
+
+CHA-1
+INT+1
+WIS+1
+CON+1
 
 ### Dwarves
 
 Lifespan: 600-800 years
 
+Dungeons are the natural home of a dwarf.
+
+* proud
+* loose-lipped
+* headstrong
+
 ### Halflings
 
-Lifespan: 90-120 years
+Lifespan: 110-160 years
 
-Hearty folk whos only desire in life is to be with others. 
+Hearty folk whos are content with a good home, a nice meal, and drink.
+
+* content
+* naturally stealthy
 
 
 ### Gnomes
 
 Lifespan: 340-510 years
 
-Gnomes often try to appear taller by spiking their hair up.
+Gnomes often try to appear taller by spiking their hair up. They are trusting
+of outsiders.
 
 
 ### Minotaurs
 
 Lifespan: 900-1200 years
 
-STR+4
+STR+2
+WIS+2
 DEX-2
 
-
+* unstealthy
+* strong 
+* thinkers/philosophers (WIS)
 
 
 ## Inspirations
