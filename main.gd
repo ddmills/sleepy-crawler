@@ -4,7 +4,7 @@ const Races = preload("res://characters/races/races.gd")
 const Gender = preload("res://enums/gender.gd")
 const Rnd = preload("res://misc/rnd.gd")
 
-onready var character = get_node("character")
+onready var character = get_node("player/character")
 onready var label = get_node("control/label")
 
 
@@ -18,17 +18,20 @@ func _on_random_btn_pressed():
 
 func _randomize_character():
 	randomize()
-	character.race = Rnd.pick(Races.all)
-	character.gender = Rnd.pick([Gender.MALE, Gender.FEMALE])
-	character.skin_color = Rnd.pick(character.race.skin_colors)
-	character.eye_color = Rnd.pick(character.race.eye_colors)
-	character.hair_color = Rnd.pick(character.race.hair_colors)
-	character.face_feature = Rnd.pick(character.race.face_features)
-	character.head_feature = Rnd.pick(character.race.head_features)
-	character.head_hair = Rnd.pick(character.race.get_hair_textures(character.gender))
-	character.face_hair = Rnd.pick(character.race.get_face_hair_textures(character.gender))
+	var race = Rnd.pick(Races.all)
+	var gender = Rnd.pick([Gender.MALE, Gender.FEMALE])
 	
-	var gender = Gender.to_string_lower(character.gender)
-	var race = character.race.name_singular
+	character.attributes.race = race
+	character.attributes.gender = gender
+	character.appearance.skin_color = Rnd.pick(race.skin_colors)
+	character.appearance.eye_color = Rnd.pick(race.eye_colors)
+	character.appearance.hair_color = Rnd.pick(race.hair_colors)
+	character.appearance.face_feature = Rnd.pick(race.face_features)
+	character.appearance.head_feature = Rnd.pick(race.head_features)
+	character.appearance.head_hair = Rnd.pick(race.get_hair_textures(gender))
+	character.appearance.face_hair = Rnd.pick(race.get_face_hair_textures(gender))
 	
-	label.text = "%s %s" % [gender, race]
+	var genderStr = Gender.to_string_lower(gender)
+	var raceStr = race.name_singular
+	
+	label.text = "%s %s" % [genderStr, raceStr]

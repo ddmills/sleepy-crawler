@@ -61,7 +61,7 @@ _global_script_classes=[ {
 } ]
 _global_script_class_icons={
 "Character": "res://ui/icons/flat/man.png",
-"CharacterAppearance": "res://ui/icons/flat/pen.png",
+"CharacterAppearance": "",
 "CharacterAttributes": "res://ui/icons/flat/graph.png",
 "CharacterSize": "",
 "CharacterSpriteSlot": "",
