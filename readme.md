@@ -119,6 +119,20 @@ DEX-2
 * thinkers/philosophers (WIS)
 
 
+## Impressions
+
+The way characters view eachother is measured by three attributes (impressions):
+
+1. Mistrust <---> Trust
+2. Resent <---> Admire
+3. Fear <---> Charmed 
+
+These impressions can be changed through the following means:
+
+1. *Intrinsic traits*. Gnomes are naturally trusting of strangers.
+2. *Effects*. A love potion can increase admiration for the target.
+3. *Actions*. Physically harming someone will cause them to resent you.
+
 ## Inspirations
 
 - https://github.com/TomenetGame/tomenet/blob/master/lib/text/birth.txt
