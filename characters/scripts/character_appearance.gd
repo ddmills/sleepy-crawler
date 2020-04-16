@@ -12,7 +12,7 @@ signal head_hair_changed(head_hair)
 signal face_hair_changed(face_hair)
 
 onready var sprites = get_node("sprites")
-onready var character = get_parent()
+onready var character = get_parent().get_parent()
 
 export(Color) var skin_color setget _set_skin_color
 export(Color) var eye_color setget _set_eye_color
@@ -27,11 +27,14 @@ func _ready():
 	sprites.ani.play("run")
 
 
+func _process(delta):
+	sprites.look_direction(character.body.look_direction)
+
+
 func _on_race_changed(race):
 	sprites.queue_free()
 	sprites = race.sprite_container.instance()
 	add_child(sprites)
-	sprites.init(character)
 
 
 func _on_gender_changed(value):
@@ -79,4 +82,3 @@ func _set_hair_color(value):
 	hair_color = value
 	sprites.material.set_shader_param("hair_replace", hair_color)
 	emit_signal("hair_color_changed", hair_color)
-

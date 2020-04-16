@@ -188,7 +188,7 @@ tracks/13/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 0,
-"values": [ Vector2( -1, -20 ) ]
+"values": [ Vector2( 0, -20 ) ]
 }
 tracks/14/type = "value"
 tracks/14/path = NodePath("face_hair:scale")
@@ -280,14 +280,13 @@ tracks/3/keys = {
 "values": [ Vector2( -6.89458, -9.25465 ), Vector2( -6.89458, -8.383 ), Vector2( -6.89458, -9.25465 ) ]
 }
 
-[node name="sprites" type="Node2D"]
+[node name="sprites" type="Sprite"]
 material = ExtResource( 4 )
-scale = Vector2( 0.989255, 1.02561 )
 script = ExtResource( 5 )
 
 [node name="hand_left" type="Sprite" parent="."]
 use_parent_material = true
-position = Vector2( 6.89458, -8.42588 )
+position = Vector2( 6.89458, -9.25465 )
 texture = ExtResource( 7 )
 
 [node name="body" type="Sprite" parent="."]
@@ -300,7 +299,6 @@ use_parent_material = true
 position = Vector2( 0, -8 )
 texture = ExtResource( 1 )
 hframes = 3
-frame = 1
 
 [node name="head_detail" type="Sprite" parent="."]
 use_parent_material = true
@@ -315,7 +313,7 @@ texture = SubResource( 3 )
 
 [node name="face_hair" type="Sprite" parent="."]
 use_parent_material = true
-position = Vector2( -1, -20 )
+position = Vector2( 0, -20 )
 texture = ExtResource( 6 )
 
 [node name="head_hair" type="Sprite" parent="."]
@@ -326,7 +324,7 @@ texture = SubResource( 3 )
 
 [node name="hand_right" type="Sprite" parent="."]
 use_parent_material = true
-position = Vector2( -6.89458, -8.42588 )
+position = Vector2( -6.89458, -9.25465 )
 texture = ExtResource( 7 )
 
 [node name="animation" type="AnimationPlayer" parent="."]

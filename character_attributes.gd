@@ -1,5 +1,5 @@
 extends Node2D
-class_name CharacterAttributes, "res://ui/icons/flat/graph.png"
+class_name CharacterAttributes, "res://ui/icons/flat/graph_2.png"
 
 const Gender = preload("res://enums/gender.gd")
 

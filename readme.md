@@ -202,7 +202,34 @@ The way characters view eachother is measured by three attributes (impressions):
 1. Mistrust <---> Trust
 2. Hate <---> Admire
 3. Fear <---> Charmed
-4. Familiarity (?)
+
+### Character properties
+
+1. Familiarity (?)
+2. Reputation
+3. ipip personality (?)
+4. Notoriety (?)
+5. Relationships (past and present)
+6. Boss, Underlings (?) Loyalty
+7. Memories
+8. Culture
+9. Personal treasures (trophies, equipment)
+10. Job
+11. Likes/Dislikes
+
+### Sites
+
+1. Culture
+2. Religion
+3. Government
+
+### Narrative
+
+1. Org chart(s), with villain(s) at the top
+2. Goals (& scheme ?)
+3. org chart repair
+4. rumors, partial clues, mistakes
+
 
 ### Alignment
 Good, Neutral, Evil

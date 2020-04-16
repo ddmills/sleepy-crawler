@@ -10,6 +10,7 @@ onready var label = get_node("control/label")
 
 func _ready():
 	_randomize_character()
+	pass
 
 
 func _on_random_btn_pressed():
