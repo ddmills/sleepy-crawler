@@ -91,6 +91,7 @@ a participant is attacked. The conversation has the potential to affect impressi
 * I want to **trade**
 * I want to give a **compliment**
 * I want to give an **insult**
+* Impersonate someone
 
 **Steal**
 
@@ -203,6 +204,12 @@ The way characters view eachother is measured by three attributes (impressions):
 2. Hate <---> Admire
 3. Fear <---> Charmed
 
+These impressions can be changed through the following means:
+
+1. **Intrinsic traits**. Gnomes are naturally trusting of strangers.
+2. **Effects**. A love potion can increase admiration for the target.
+3. **Actions**. Physically harming someone will cause them to resent you.
+
 ### Character properties
 
 1. Familiarity (?)
@@ -216,6 +223,40 @@ The way characters view eachother is measured by three attributes (impressions):
 9. Personal treasures (trophies, equipment)
 10. Job
 11. Likes/Dislikes
+12. given name, surname, nickname
+13. voice
+14. class/archetype/role
+15. background (nationality, ethnicity, race)
+16. Title (nobility, religious, military)
+17. social status (caste, heirarchy)
+18. possesions (properties, heritage, claims)
+18. family (parents, siblings, children)
+19. Personality
+	* quirks, strengths, weaknesses
+	* personal values
+	* moral strengths & weaknesses 
+	* objectives, motivations, goals 
+	* political alignment
+	* sexual orientation
+
+### emotional connection
+
+1. sense of relatedness
+2. customizable names/idents (?)
+3. personal 
+4. emotional engagement
+
+
+### discrete agency
+* limited control
+* indirect actions, influence
+* witness story unfold
+* multiple outcomes
+* chaos, randomness
+* unexpected events and suprises
+* Reasoning (motivations/knowledge) + (relationships/abilities) = behaviour
+* how they react to events
+* registry of events
 
 ### Sites
 
@@ -236,13 +277,14 @@ Good, Neutral, Evil
 Lawful, Neutral, Chaotic
 
 
-These impressions can be changed through the following means:
-
-1. **Intrinsic traits**. Gnomes are naturally trusting of strangers.
-2. **Effects**. A love potion can increase admiration for the target.
-3. **Actions**. Physically harming someone will cause them to resent you.
-
 ## Inspirations
 
 - https://github.com/TomenetGame/tomenet/blob/master/lib/text/birth.txt
 - http://crazybitsstudios.com/rim-lighting-and-realtime-shadows-for-sprites-in-unity-2d-12
+
+
+- [Remy Boicherot - Crafting Emergent Narrative Through Characters and Systems
+](https://www.youtube.com/watch?v=Lw-DB68wOFg)
+- [Tarn Adams - Emergent narrative building blocks](https://www.youtube.com/watch?v=snbt0PxRvpk)
+- [6 Techniques for Leveraging AI in Content Generation](https://www.youtube.com/watch?v=priaBvs441Y)
+- [Tarn Adams - Villains in Dwarf Fortress](https://www.youtube.com/watch?v=4-7TtPX5uhg)

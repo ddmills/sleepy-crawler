@@ -27,6 +27,13 @@ export(Array, Color) var skin_colors
 export(Array, Color) var hair_colors
 export(Array, Color) var eye_colors
 
+export(int) var str_mod = 0
+export(int) var dex_mod = 0
+export(int) var wis_mod = 0
+export(int) var int_mod = 0
+export(int) var cha_mod = 0
+export(int) var con_mod = 0
+
 
 func get_body_texture(gender):
 	match gender:

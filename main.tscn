@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://misc/character_sprites_large.tscn" type="PackedScene" id=1]
 [ext_resource path="res://characters/scripts/character.gd" type="Script" id=2]
@@ -10,6 +10,7 @@
 [ext_resource path="res://characters/player_controller.gd" type="Script" id=8]
 [ext_resource path="res://character_attributes.gd" type="Script" id=9]
 [ext_resource path="res://characters/scripts/character_appearance.gd" type="Script" id=10]
+[ext_resource path="res://characters/scripts/character_statistics.gd" type="Script" id=11]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 7, 12 )
@@ -40,6 +41,9 @@ current = true
 
 [node name="attributes" type="Node2D" parent="player/character"]
 script = ExtResource( 9 )
+
+[node name="statistics" type="Node2D" parent="player/character"]
+script = ExtResource( 11 )
 
 [node name="control" type="Control" parent="."]
 margin_left = -16.0
