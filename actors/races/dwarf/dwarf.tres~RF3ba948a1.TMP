@@ -1,0 +1,28 @@
+[gd_resource type="Resource" load_steps=8 format=2]
+
+[ext_resource path="res://actors/races/race.gd" type="Script" id=1]
+[ext_resource path="res://actors/races/race_bases.png" type="Texture" id=2]
+[ext_resource path="res://misc/actor_sprites_small.tscn" type="PackedScene" id=3]
+[ext_resource path="res://actors/legs/legs_small_bare_male.tres" type="Texture" id=4]
+[ext_resource path="res://actors/legs/legs_small_bare_female.tres" type="Texture" id=5]
+
+[sub_resource type="AtlasTexture" id=1]
+atlas = ExtResource( 2 )
+region = Rect2( 168, 40, 16, 24 )
+
+[sub_resource type="AtlasTexture" id=2]
+atlas = ExtResource( 2 )
+region = Rect2( 168, 40, 16, 24 )
+
+[resource]
+script = ExtResource( 1 )
+name_singular = "dwarf"
+name_plural = "dwarves"
+size = 0
+sprite_container = ExtResource( 3 )
+body_male = SubResource( 2 )
+body_female = SubResource( 1 )
+legs_male = ExtResource( 4 )
+legs_female = ExtResource( 5 )
+skin_colors = [ Color( 0.788235, 0.670588, 0.564706, 1 ) ]
+hair_colors = [  ]

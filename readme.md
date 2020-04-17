@@ -1,11 +1,11 @@
-## Characters
+## Actors
 
 ### Primary attributes
 - race
-- gender 
+- gender
 - class
 
-### Secondary attributes 
+### Secondary attributes
 Secondary attributes are influenced by the primary attributes.
 
 - weight
@@ -15,7 +15,7 @@ Secondary attributes are influenced by the primary attributes.
 
 ### Stats
 
-Every character and creature has the following stats.
+Every actor and creature has the following stats.
 
 **STR Strength**
 
@@ -66,7 +66,7 @@ Brief sprint in a direction. Distance is determined by DEX or STR.
 **Drop item**
 
 
-### Character interactions
+### Actor interactions
 
 **Talk**
 
@@ -77,10 +77,10 @@ a participant is attacked. The conversation has the potential to affect impressi
   * **give me**...
     * an **item**
   * **attack**...
-    * a **character**
+    * a **actor**
     * a **monster**
   * **follow**...
-    * a **character**
+    * a **actor**
 * I want to **get information** about...
   * a **peson**
   * an **item** that i...
@@ -142,9 +142,9 @@ Lifespan: 130-160 years
 
 Orcs are serious brutes who will always tell you what is on their mind.
 
-* determined 
-* strong 
-* 
+* determined
+* strong
+*
 
 **Fens**
 
@@ -192,13 +192,13 @@ WIS+2
 DEX-2
 
 * unstealthy
-* strong 
+* strong
 * thinkers/philosophers (WIS)
 
 
 ### Impressions
 
-The way characters view eachother is measured by three attributes (impressions):
+The way actors view eachother is measured by three attributes (impressions):
 
 1. Mistrust <---> Trust
 2. Hate <---> Admire
@@ -210,7 +210,7 @@ These impressions can be changed through the following means:
 2. **Effects**. A love potion can increase admiration for the target.
 3. **Actions**. Physically harming someone will cause them to resent you.
 
-### Character properties
+### Actor properties
 
 1. Familiarity (?)
 2. Reputation
@@ -234,8 +234,8 @@ These impressions can be changed through the following means:
 19. Personality
 	* quirks, strengths, weaknesses
 	* personal values
-	* moral strengths & weaknesses 
-	* objectives, motivations, goals 
+	* moral strengths & weaknesses
+	* objectives, motivations, goals
 	* political alignment
 	* sexual orientation
 
@@ -243,7 +243,7 @@ These impressions can be changed through the following means:
 
 1. sense of relatedness
 2. customizable names/idents (?)
-3. personal 
+3. personal
 4. emotional engagement
 
 
@@ -283,7 +283,7 @@ Lawful, Neutral, Chaotic
 - http://crazybitsstudios.com/rim-lighting-and-realtime-shadows-for-sprites-in-unity-2d-12
 
 
-- [Remy Boicherot - Crafting Emergent Narrative Through Characters and Systems
+- [Remy Boicherot - Crafting Emergent Narrative Through Actors and Systems
 ](https://www.youtube.com/watch?v=Lw-DB68wOFg)
 - [Tarn Adams - Emergent narrative building blocks](https://www.youtube.com/watch?v=snbt0PxRvpk)
 - [6 Techniques for Leveraging AI in Content Generation](https://www.youtube.com/watch?v=priaBvs441Y)

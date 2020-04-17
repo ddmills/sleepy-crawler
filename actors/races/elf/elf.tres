@@ -1,0 +1,50 @@
+[gd_resource type="Resource" load_steps=17 format=2]
+
+[ext_resource path="res://actors/races/race.gd" type="Script" id=1]
+[ext_resource path="res://actors/races/race_bases.png" type="Texture" id=2]
+[ext_resource path="res://misc/actor_sprites_medium.tscn" type="PackedScene" id=3]
+[ext_resource path="res://actors/legs/legs_medium_bare_female.tres" type="Texture" id=4]
+[ext_resource path="res://actors/legs/legs_medium_bare_male.tres" type="Texture" id=5]
+[ext_resource path="res://actors/features/head/pointy_ears.tres" type="Texture" id=6]
+[ext_resource path="res://actors/features/hair/head/hair_elvish_1.tres" type="Texture" id=7]
+[ext_resource path="res://actors/features/hair/head/hair_elvish_3.tres" type="Texture" id=8]
+[ext_resource path="res://actors/features/hair/head/hair_elvish_4.tres" type="Texture" id=9]
+[ext_resource path="res://actors/features/hair/head/hair_elvish_2.tres" type="Texture" id=10]
+[ext_resource path="res://actors/features/hair/head/hair_elvish_5.tres" type="Texture" id=11]
+[ext_resource path="res://actors/features/hair/head/female_hair_2.tres" type="Texture" id=12]
+[ext_resource path="res://actors/features/hair/head/female_hair_9.tres" type="Texture" id=13]
+[ext_resource path="res://actors/features/hair/head/female_hair_8.tres" type="Texture" id=14]
+
+[sub_resource type="AtlasTexture" id=1]
+atlas = ExtResource( 2 )
+region = Rect2( 72, 40, 16, 24 )
+
+[sub_resource type="AtlasTexture" id=2]
+atlas = ExtResource( 2 )
+region = Rect2( 72, 8, 16, 24 )
+
+[resource]
+script = ExtResource( 1 )
+name_singular = "elf"
+name_plural = "elves"
+size = 1
+sprite_container = ExtResource( 3 )
+body_male = SubResource( 2 )
+body_female = SubResource( 1 )
+legs_male = ExtResource( 5 )
+legs_female = ExtResource( 4 )
+head_features = [ ExtResource( 6 ) ]
+face_features = [  ]
+male_hair = [ ExtResource( 7 ), ExtResource( 10 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 11 ) ]
+female_hair = [ ExtResource( 7 ), ExtResource( 10 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 14 ), ExtResource( 13 ) ]
+male_face_hair = [  ]
+female_face_hair = [  ]
+skin_colors = [ Color( 0.694118, 0.521569, 0.392157, 1 ) ]
+hair_colors = [ Color( 0.717647, 0.647059, 0.431373, 1 ), Color( 0.686275, 0.619608, 0.462745, 1 ), Color( 0.670588, 0.619608, 0.584314, 1 ), Color( 0.721569, 0.639216, 0.27451, 1 ), Color( 0.627451, 0.560784, 0.243137, 1 ) ]
+eye_colors = [ Color( 0.34902, 0.486275, 0.105882, 1 ), Color( 0.192157, 0.541176, 0.254902, 1 ), Color( 0.129412, 0.635294, 0.576471, 1 ) ]
+str_mod = 0
+dex_mod = 1
+wis_mod = 0
+int_mod = 1
+cha_mod = 0
+con_mod = -1

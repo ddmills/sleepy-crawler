@@ -1,0 +1,36 @@
+[gd_resource type="Resource" load_steps=9 format=2]
+
+[ext_resource path="res://actors/races/race.gd" type="Script" id=1]
+[ext_resource path="res://actors/races/race_bases.png" type="Texture" id=2]
+[ext_resource path="res://actors/races/fen/actor_sprites_fen.tscn" type="PackedScene" id=3]
+[ext_resource path="res://actors/legs/legs_medium_bare_female.tres" type="Texture" id=4]
+[ext_resource path="res://actors/legs/legs_medium_bare_male.tres" type="Texture" id=5]
+[ext_resource path="res://actors/features/head/fen_horns_1.tres" type="Texture" id=6]
+
+[sub_resource type="AtlasTexture" id=1]
+atlas = ExtResource( 2 )
+region = Rect2( 136, 40, 16, 24 )
+
+[sub_resource type="AtlasTexture" id=2]
+atlas = ExtResource( 2 )
+region = Rect2( 136, 8, 16, 24 )
+
+[resource]
+script = ExtResource( 1 )
+name_singular = "fen"
+name_plural = "fens"
+size = 1
+sprite_container = ExtResource( 3 )
+body_male = SubResource( 2 )
+body_female = SubResource( 1 )
+legs_male = ExtResource( 5 )
+legs_female = ExtResource( 4 )
+head_features = [ ExtResource( 6 ) ]
+face_features = [  ]
+male_hair = [  ]
+female_hair = [  ]
+male_face_hair = [  ]
+female_face_hair = [  ]
+skin_colors = [ Color( 0.494118, 0.439216, 0.396078, 1 ), Color( 0.329412, 0.329412, 0.32549, 1 ), Color( 0.368627, 0.368627, 0.341176, 1 ) ]
+hair_colors = [  ]
+eye_colors = [ Color( 0.211765, 0.109804, 0.0823529, 1 ) ]
